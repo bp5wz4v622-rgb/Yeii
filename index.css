@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-crema text-black font-sans overflow-x-hidden;
+  }
+}
+
+.neo-shadow {
+  shadow-[8px_8px_0px_0px_rgba(0,0,0,1)];
+}
+
+.neo-border {
+  border-4 border-black;
+}
