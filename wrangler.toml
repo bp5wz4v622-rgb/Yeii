@@ -1,0 +1,11 @@
+# Configuración del servidor de Cloudflare
+name = "to-revuelto-api"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Conexión con la base de datos D1 (SQL)
+[[d1_databases]]
+binding = "DB"
+database_name = "to-revuelto-db"
+database_id = "reemplazar-con-tu-id-de-database"
+
