@@ -2,16 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Estilos base para el look de To' Revuelto */
 @layer base {
   body {
-    @apply bg-crema text-black font-sans overflow-x-hidden;
+    @apply bg-[#FDFCF0] text-black font-sans overflow-x-hidden;
   }
 }
 
+/* Corregimos el error del Neo-Shadow */
 .neo-shadow {
-  shadow-[8px_8px_0px_0px_rgba(0,0,0,1)];
+  /* En CSS puro se usa box-shadow, no shadow-[] */
+  box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
 }
 
 .neo-border {
-  border-4 border-black;
+  border: 4px solid black;
 }
+
